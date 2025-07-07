@@ -10,7 +10,7 @@ struct ContentView: View {
     
     @State private var timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    let possiblePics = ["Apple","Dog","Egg"]
+    let possiblePics = ["apple","dog","egg"]
     var randomTarget: Int {
         return Int.random(in: 0..<possiblePics.count)
     }
